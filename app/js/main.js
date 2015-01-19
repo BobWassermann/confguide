@@ -17,7 +17,6 @@ function calls(){
 $(window).scroll(function(){
   $('nav').css({'margin-left' : -$(window).scrollTop()*0.22 });
   $(window).scrollTop() >= $('.bucket.locale').offset().top ? $('nav a:eq(1)').css('background', 'black') : $('nav a:eq(1)').css('background', '');
-  
 });
 
 $(document).ready(calls);
