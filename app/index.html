@@ -20,22 +20,6 @@ title: Conf Guide – A curated list of design-related events
   
   </div>
   
-  
-  <div class="bucket locale">
-
-    {% for post in site.posts reversed %}
-      <a href="{{ post.site }}" target="_blank" class="card {{ post.tags | join:" " }}">    
-        <div class="image" style="background-image: url(img/{{ post.path }}.jpg)"></div>
-          <div class="text">
-            <h4>{{ post.name }}</h4>
-            <em>{{ post.datestart }} – {{ post.dateend }}</em>
-            <p class="location">{{ post.location }}</p>
-          </div>
-      </a>
-    {% endfor %}
-  
-  </div>
-  
   <div class="bucket all">
 
     {% for post in site.posts reversed %}
