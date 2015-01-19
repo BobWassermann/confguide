@@ -1,0 +1,35 @@
+$fontface--brandon-grotesque: "brandon-grotesque", futura, sans-serif;
+$fontface--proxima-nova: "proxima-nova", helvetica, sans-serif;
+$fontface--body--default: $fontface--brandon-grotesque;
+$fontface--heading-default: $fontface--proxima-nova;
+$fontface--body-size: 20px;
+$fontface--body-line-height: 1.2em;
+$fontface--body-color: #1c1c1c;
+$fontface--h1-size: 2.5rem;
+$fontface--h4-size: 1.5rem;
+
+body {
+  font-family: $fontface--body--default;
+  font-size: $fontface--body-size;
+  line-height: $fontface--body-line-height;
+  color: $fontface--body-color;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  margin-bottom: .4em;
+  font-family: $fontface--heading-default;
+}
+
+h1 {
+  font-size: $fontface--h1-size;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  text-align: center;
+  margin-bottom: .7em;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: $fontface--h4-size;
+}

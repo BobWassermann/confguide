@@ -1,0 +1,16 @@
+footer {
+  display: block;
+  text-align: center;
+  font-size: .9rem;
+  padding: 1em 0;
+  color: lighten($fontface--body-color, 20);
+  
+  i {
+    font-size: .8em;
+    padding-right: .08em;
+  }
+  
+  a {
+    color: black;
+  }
+}

@@ -1,13 +1,54 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Conf Guide – A curated list of design-related events
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+<div id="container">
+  
+  <div class="bucket soon">
+
+    {% for post in site.posts reversed limit:4 %}
+      <a href="{{ post.site }}" target="_blank" class="card">    
+        <div class="image" style="background-image: url(img/{{ post.path }}.jpg)"></div>
+          <div class="text">
+            <h4>{{ post.name }}</h4>
+            <em>{{ post.datestart }} – {{ post.dateend }}</em>
+            <p class="location">{{ post.location }}</p>
+          </div>
+      </a>
     {% endfor %}
-  </ul>
+  
+  </div>
+  
+  
+  <div class="bucket locale">
+
+    {% for post in site.posts reversed %}
+      <a href="{{ post.site }}" target="_blank" class="card {{ post.tags | join:" " }}">    
+        <div class="image" style="background-image: url(img/{{ post.path }}.jpg)"></div>
+          <div class="text">
+            <h4>{{ post.name }}</h4>
+            <em>{{ post.datestart }} – {{ post.dateend }}</em>
+            <p class="location">{{ post.location }}</p>
+          </div>
+      </a>
+    {% endfor %}
+  
+  </div>
+  
+  <div class="bucket all">
+
+    {% for post in site.posts reversed %}
+      <a href="{{ post.site }}" target="_blank" class="card">    
+        <div class="image" style="background-image: url(img/{{ post.path }}.jpg)"></div>
+          <div class="text">
+            <h4>{{ post.name }}</h4>
+            <em>{{ post.datestart }} – {{ post.dateend }}</em>
+            <p class="location">{{ post.location }}</p>
+          </div>
+      </a>
+    {% endfor %}
+  
+  </div>  
+
 </div>

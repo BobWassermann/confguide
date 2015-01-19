@@ -6,43 +6,36 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <!-- build:css({app,.tmp}) /css/main.css -->
+        <!-- build:css({app,.tmp}) ./css/main.css -->
         <!-- Syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/css/syntax.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
         <!-- endbuild -->
 
     </head>
     <body>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+
+    <nav>
+      <a href=""><h1>Next</h1></a>
+      <a href=""><h1 class="location"></h1></a>
+      <a href=""><h1>All</h1></a>
+    </nav>
+    
 
           {{ content }}
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Bob Wassermann<br />
-                <a href="mailto:bob@wassermann.nl">bob@wassermann.nl</a>
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+    
+    <footer>crafted with <i>♥</i> in berlin, by <a href="http://twitter.com/bobwassermann/" target="_blank">@bobwassermann</a></footer>
 
-    <!-- build:js(app) /js/scripts.js -->
-    <script src="/js/main.js"></script>
+    <!-- build:js(app) ./js/scripts.js -->
+    <script src="{{site.baseurl}}/_bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="//use.typekit.net/lhz1biz.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <script src="{{site.baseurl}}/js/main.js"></script>
     <!-- endbuild -->
     </body>
 </html>
