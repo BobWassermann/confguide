@@ -1,0 +1,20 @@
+#ci {
+  height: 60vh;
+  width: 100%;
+  position: fixed;
+    hgroup {
+      position: relative;
+      top: 50%;
+      @include translateY(-50%);
+      text-align: center;
+      h1 {
+        font-family: $fontface--heading-default;
+        font-weight: 800;
+        font-style: italic;
+        letter-spacing: 0px;
+      }
+      h4 {
+        font-family: $fontface--body--default;
+      }
+    }
+}

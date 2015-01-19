@@ -22,7 +22,7 @@ title: Conf Guide – A curated list of design-related events
   
   <div class="bucket all">
 
-    {% for post in site.posts reversed %}
+    {% for post in site.posts reversed offset:4 %}
       <a href="{{ post.site }}" target="_blank" class="card">    
         <div class="image" style="background-image: url(img/{{ post.path | remove: '_posts/' }}.jpg)"></div>
           <div class="text">
