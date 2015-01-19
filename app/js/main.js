@@ -10,7 +10,7 @@ function calls(){
     } else {
      $(this).children().css({'width' : $(window).width() / elemCount*2, 'height' : $(window).height()/2});
     }
-  });  
+  });
 }
 
 $(document).ready(calls);
