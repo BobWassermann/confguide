@@ -53,7 +53,7 @@ module.exports = function (grunt) {
         port: 9000,
         livereload: 35729,
         // change this to '0.0.0.0' to access the server from outside
-        hostname: 'localhost'
+        hostname: '0.0.0.0'
       },
       livereload: {
         options: {
@@ -293,6 +293,14 @@ module.exports = function (grunt) {
           commit: true,
           push: true
         }
+      },
+      pages: {
+        options: {
+          remote: 'git@github.com:BobWassermann/confguide.git',
+          branch: 'gh-pages',
+          commit: true,
+          push: true
+        }
       }
     },
     jshint: {
@@ -386,7 +394,7 @@ module.exports = function (grunt) {
     'check',
     'test',
     'build',
-    'buildcontrol'
+    'buildcontrol:pages'
     ]);
 
   grunt.registerTask('default', [
