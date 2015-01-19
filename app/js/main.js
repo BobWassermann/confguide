@@ -8,7 +8,7 @@ function calls(){
     if(elemCount < 4) {
      $(this).children().css({'width' : $(window).width() / elemCount, 'height' : $(window).height()});
     } else {
-     $(this).children().css({'width' : $(window).width() / elemCount*2, 'height' : $(window).height()/2});
+     $(this).children().css({'width' : $(window).width() / 4, 'height' : $(window).height()/2});
     }
   });
 }
