@@ -48,6 +48,12 @@ $card--imageheight: 100%;
 .bucket .card {
   height: calc(100vh / 3);
   width: 30%;
+  em {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+  }
   &:nth-child(1) {
     width: 70%;
     height: 100vh;
@@ -56,12 +62,23 @@ $card--imageheight: 100%;
   &:nth-child(3),
   &:nth-child(4) {
     width: 30%;
-    height: 33vh;
+    height: calc(100vh/3);
     h2 {
       font-size: 2vw;
     }
     h4 {
       font-size: 1.3vw;
     }
+  }
+}
+
+.bucket .card:nth-child(n+5) {
+  width: calc(100%/3);
+  height: 50vh;
+  h2 {
+    font-size: 2vw;
+  }
+  h4 {
+    font-size: 1.3vw;
   }
 }
