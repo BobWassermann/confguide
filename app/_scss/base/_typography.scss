@@ -1,12 +1,15 @@
-$fontface--brandon-grotesque: "brandon-grotesque", futura, sans-serif;
-$fontface--proxima-nova: "proxima-nova", helvetica, sans-serif;
-$fontface--body--default: $fontface--brandon-grotesque;
-$fontface--heading-default: $fontface--proxima-nova;
+$fontface--soleil: "soleil", sans-serif;
+$fontface--soleil-light: 300;
+$fontface--soleil-regular: 400;
+$fontface--soleil-semibold: 600;
+$fontface--body--default: $fontface--soleil;
+$fontface--heading-default: $fontface--soleil;
 $fontface--body-size: 20px;
 $fontface--body-line-height: 1.2em;
 $fontface--body-color: #1c1c1c;
 $fontface--h1-size: 2.5rem;
-$fontface--h4-size: 1.5rem;
+$fontface--h2-size: 3rem;
+$fontface--h4-size: 1.2rem;
 
 body {
   font-family: $fontface--body--default;
@@ -30,6 +33,12 @@ h1 {
   font-weight: 100;
 }
 
+h2 {
+  font-weight: $fontface--soleil-regular;
+  font-size: $fontface--h2-size;
+}
+
 h4 {
   font-size: $fontface--h4-size;
+  font-weight: $fontface--soleil-semibold;
 }
