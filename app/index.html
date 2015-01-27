@@ -7,41 +7,16 @@ title: Conf Guide – A curated list of design-related events
   
   <div class="bucket soon">
   
-    {% assign counter = 0 %}
     {% for post in site.posts reversed %}
-      {% if counter < 4 %}
         <a href="{{ post.site }}" target="_blank" class="card">    
           <div class="image" style="background-image: url(img/{{ post.path | remove: '_posts/' }}.jpg)"></div>
             <div class="text">
-              <h4>{{ post.name }}</h4>
-              <em>{{ post.datestart }} – {{ post.dateend }}</em>
-              <p class="location">{{ post.location }}</p>
+              <h2>{{ post.name }}</h2>
+              <h4 class="location">{{ post.location }}</h4>
             </div>
+            <em>{{ post.datestart }} – {{ post.dateend }}</em>
         </a>
-        {% assign counter = counter | plus:1 %}
-      {% endif %}
     {% endfor %}
   
   </div>
-  
-  <div class="bucket all">
-
-    {% assign counter = 0 %}
-    {% for post in site.posts reversed %}
-      {% if counter < 4 %}
-        {% assign counter = counter | plus:1 %}
-      {% else %}
-        <a href="{{ post.site }}" target="_blank" class="card">    
-          <div class="image" style="background-image: url(img/{{ post.path | remove: '_posts/' }}.jpg)"></div>
-            <div class="text">
-              <h4>{{ post.name }}</h4>
-              <em>{{ post.datestart }} – {{ post.dateend }}</em>
-              <p class="location">{{ post.location }}</p>
-            </div>
-        </a>
-      {% endif %}
-    {% endfor %}
-  
-  </div>  
-
 </div>

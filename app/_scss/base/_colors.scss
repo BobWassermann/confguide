@@ -1,1 +1,4 @@
 $lightgrey: #f4f4f4;
+
+// Gradients
+.grad--red { @include background-image(linear-gradient(#FF5E3A, #FF2A68)) }

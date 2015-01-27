@@ -11,6 +11,11 @@ function calls(){
      $(this).children().css({'width' : $(window).width() / 4, 'height' : $(window).height()/2});
     }
   });
+
+
+  var bg = $('.bucket .card .image').eq(0).css('background-image');
+  var gradientRed = 'linear-gradient(#FF5E3A, #FF2A68)';
+  $('.bucket .card .image').eq(0).css('background-image', 'url( '+bg.slice(4, -1)+', linear-gradient(#FF5E3A, #FF2A68))')
 }
 
 // Nav
